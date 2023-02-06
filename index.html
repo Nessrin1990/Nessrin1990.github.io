@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr" xmlns="http://www.w3.org/1999/html">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <title>My Portfolio</title>
+</head>
+
+<body style="background-image:url(static/accounts/gris.jpg);">
+    <div class="container-fluid">
+        <div class="row">
+
+            <div class="col-sm-12 mt-1 mb-1" style="font-family:'Georgia', serif; font-size: cover;">
+
+                <h1>
+                    <center><b>Bienvenue à mon portfolio </b><br>
+
+                    </center>
+                </h1>
+
+
+                <style>
+                    .container {
+                        color: #808080;
+                        display: inline-block;
+                        margin-left: 170px;
+                        width: 900px;
+                        padding: 10px;
+                        text-align: center;
+                    }
+
+                    button {
+                        background: none;
+                        color: inherit;
+                        border: none;
+                        padding: 0;
+                        font: inherit;
+                        cursor: pointer;
+                        outline: inherit;
+                    }
+
+                    label {
+                        background: none;
+                        color: inherit;
+                        border: none;
+                        padding: 8px;
+                        font: inherit;
+                        cursor: pointer;
+                        outline: inherit;
+                    }
+
+                    btn btn-primary btn-lg {
+                        background-color: blue;
+                    }
+
+                    .heading {
+                        border-radius: 25px;
+                        background-color: white;
+                        color: #808080;
+                        display: inline-block;
+                        margin: 10px;
+                        box-shadow: 0 2px 2px #ccc;
+                        width: 700px;
+                        padding: 10px;
+                        text-align: center;
+                    }
+
+                    .frm {
+                        border-radius: 25px;
+                        color: #808080;
+                        display: inline-block;
+                        margin: 10px;
+
+                        text-align: center;
+                        font-size: 20px;
+                    }
+                </style>
+                <div class="frm">
+                    <form name="myForm" action="/insert/getaspect" method="post">
+
+                        <H2>NESRINE Azaiez</H2>
+                    </form>
+                </div>
+
+                <div class="frm">
+                    <form name="myForm" action="/insert/getaspect" method="post">
+
+                        <input type="submit" class="btn btn-primary btn-lg" value="home">
+                    </form>
+                </div>
+                <div class="frm">
+                    <form name="myForm" action="/insert/getaspect" method="post">
+
+                        <input type="submit" class="btn btn-primary btn-lg" value="about me ">
+                    </form>
+                </div>
+                <div class="frm">
+
+                    <form name="myForm" method="post">
+
+                        <center>
+                            <a href="https://www.linkedin.com/in/nesrine-azaiez-0b8698186/"
+                                class="btn btn-primary btn-lg">linkedin</a>
+                        </center>
+                    </form>
+                </div>
+                <div class="frm">
+                    <form name="myForm" method="post">
+
+                        <center>
+                            <a href="https://github.com/Nessrin1990" class="btn btn-primary btn-lg">Github</a>
+                        </center>
+                    </form>
+                </div>
+                <div class="frm">
+                    <form name="myForm" method="post">
+                        <center>
+                            <a href="https://www.kaggle.com/nesrineazaiez" class="btn btn-primary btn-lg">Kaggle</a>
+                        </center>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+
+
+
+        <center><strong>
+                <p class="" style="white-space:pre-wrap;" id="yui_3_17_2_1_1673021944160_44">
+                    In my Master thesis I used the LSTM , BiGRU NLP model to extract and predict aspect in each
+                    polarities.
+                    MACHINE LEARNING, DEEP LEARNING, NATURAL LANGUAGE PROCESSING, DJANGO , FLASK</p>
+                </p>
+            </strong></center>
+        <br>
+        <br>
+        <div>
+
+
+            <form name="myForm" method="post">
+
+                <center>
+                    <a href="https://github.com/Nessrin1990/Analyse-des-sentiments" class="button">Analysis sentiment oF
+                        USA Election 2020:</a>
+                </center>
+            </form><br>
+            <form name="myForm" method="post">
+
+                <center>
+                    <a href="https://github.com/Nessrin1990/Aspect-sentiment-analysis-in-tunisian-dialect"
+                        class="button">Aspect-sentiment-analysis-in-tunisian-dialect</a>
+                </center>
+            </form> <br>
+
+            <form name="myForm" method="post">
+                {% csrf_token %} {{ form.as_p }}
+                <center>
+                    <a href="https://github.com/Nessrin1990/Chatbot_" class="button">Chatbot With Deep learning</a>
+                </center>
+            </form>
+            <br>
+            <form name="myForm" method="post">
+
+                <center>
+                    <a href="https://github.com/Nessrin1990/Neutral-Machine-Translation-with-Joeynmt"
+                        class="button">Neutral-Machine-Translation-with-Joeynmt</a>
+                </center>
+            </form>
+            <br>
+            <form name="myForm" method="post">
+
+                <center>
+                    <a href="https://github.com/Nessrin1990/CodeClause_Churn-Prediction-in-Telecom-Industry-using-Logistic-Regression"
+                        class="button">Churn-Prediction-in-Telecom-Industry-using-Logistic-Regression</a>
+                </center>
+            </form>
+            <br>
+            <form name="myForm" method="post">
+
+                <center>
+                    <a href="https://github.com/Nessrin1990/CodeClause_-Market_Basket_Analysis_using_Apriori_Algorithm"
+                        class="button">Market_Basket_Analysis_using_Apriori_Algorithm</a>
+                </center>
+            </form>
+            <form name="myForm" method="post">
+                <center>
+                    <a href="https://github.com/Nessrin1990/CodeClause_-Market_Basket_Analysis_using_Apriori_Algorithm"
+                        class="button">Market_Basket_Analysis_using_Apriori_Algorithm</a>
+                </center>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
